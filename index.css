@@ -20,22 +20,70 @@ html {
     url(svg/backgrounds/curve-fire.svg) no-repeat center 270rem / 120rem,
     url(svg/illustrations/etherium-arcanum.svg) no-repeat calc(50% + 42.5rem) 340rem / 35rem,
     url(svg/illustrations/AAA.svg) no-repeat center 328rem / 55rem,
-    url(svg/backgrounds/fire.svg) no-repeat center top;
+    url(svg/backgrounds/fire.svg) no-repeat center top / 100vw;
 
     background-color: black;
 
     justify-content: flex-start;
     flex-wrap: nowrap;
-
-    width: max-content;
 }
 
-/* IPad Air get it by media query virtual width */
+/* IPhone SE */
+@media (min-width: 375px)  {
+    html {
+        background: url(svg/backgrounds/background.svg) repeat,
+        url(svg/illustrations/moon.svg) no-repeat calc(50% + 30rem) 145rem / 60rem 60rem,
+        url(svg/backgrounds/top-background.svg) no-repeat center 40rem / 100rem 90rem,
+        url(svg/backgrounds/bottom-background.svg) no-repeat center 65rem / 100rem 90rem,
+        url(svg/illustrations/&.svg) no-repeat calc(50% - 30rem) 160rem / 50rem 50rem,
+        url(svg/illustrations/stars.svg) no-repeat center 135rem / 50rem 50rem,
+        url(svg/backgrounds/blue-curve.svg) no-repeat center 60rem / 120rem,
+        url(svg/illustrations/sun.svg) no-repeat calc(50% - 35rem) 270rem / 40rem,
+        url(svg/backgrounds/curve-fire.svg) no-repeat center 270rem / 120rem,
+        url(svg/illustrations/etherium-arcanum.svg) no-repeat calc(50% + 42.5rem) 340rem / 35rem,
+        url(svg/illustrations/AAA.svg) no-repeat center 328rem / 55rem,
+        url(svg/backgrounds/fire.svg) no-repeat center top;
+
+        background-color: black;
+
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        width: fit-content;
+    }
+}
+
+/* IPhone XR */
+@media (min-width: 414px) {
+    html {
+        background: url(svg/backgrounds/background.svg) repeat,
+        url(svg/illustrations/moon.svg) no-repeat calc(50% + 30rem) 145rem / 60rem 60rem,
+        url(svg/backgrounds/top-background.svg) no-repeat center 40rem / 100rem 90rem,
+        url(svg/backgrounds/bottom-background.svg) no-repeat center 65rem / 100rem 90rem,
+        url(svg/illustrations/&.svg) no-repeat calc(50% - 30rem) 160rem / 50rem 50rem,
+        url(svg/illustrations/stars.svg) no-repeat center 135rem / 50rem 50rem,
+        url(svg/backgrounds/blue-curve.svg) no-repeat center 60rem / 120rem,
+        url(svg/illustrations/sun.svg) no-repeat calc(50% - 35rem) 270rem / 40rem,
+        url(svg/backgrounds/curve-fire.svg) no-repeat center 270rem / 120rem,
+        url(svg/illustrations/etherium-arcanum.svg) no-repeat calc(50% + 42.5rem) 340rem / 35rem,
+        url(svg/illustrations/AAA.svg) no-repeat center 327rem / 55rem,
+        url(svg/backgrounds/fire.svg) no-repeat center top;
+
+        background-color: black;
+
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        width: fit-content;
+    }
+}
+
+/* IPad Air */
 @media (min-width: 820px) {
     html {
         background: url(svg/backgrounds/background.svg) repeat,
         url(svg/illustrations/moon.svg) no-repeat calc(50% + 30rem) 145rem / 60rem 60rem,
-        url(svg/backgrounds/top-background.svg) no-repeat center 35rem / 100rem 90rem,
+        url(svg/backgrounds/top-background.svg) no-repeat center 37.5rem / 100rem 90rem,
         url(svg/backgrounds/bottom-background.svg) no-repeat center 65rem / 100rem 90rem,
         url(svg/illustrations/&.svg) no-repeat calc(50% - 30rem) 160rem / 50rem 50rem,
         url(svg/illustrations/stars.svg) no-repeat center 135rem / 50rem 50rem,
@@ -56,12 +104,12 @@ html {
 }
 
 /* Galaxy Fold */
-@media (min-width:280px) {
+@media (min-width: 280px) {
     html {
         background: url(svg/backgrounds/background.svg) repeat,
         url(svg/illustrations/moon.svg) no-repeat calc(50% + 30rem) 145rem / 60rem 60rem,
-        url(svg/backgrounds/top-background.svg) no-repeat center 35rem / 100rem 90rem,
-        url(svg/backgrounds/bottom-background.svg) no-repeat center 65rem / 100rem 90rem,
+        url(svg/backgrounds/top-background.svg) no-repeat center 50rem / 100rem 90rem,
+        url(svg/backgrounds/bottom-background.svg) no-repeat center 75rem / 100rem 90rem,
         url(svg/illustrations/&.svg) no-repeat calc(50% - 30rem) 160rem / 50rem 50rem,
         url(svg/illustrations/stars.svg) no-repeat center 135rem / 50rem 50rem,
         url(svg/backgrounds/blue-curve.svg) no-repeat center 60rem / 120rem,
@@ -105,7 +153,32 @@ html {
     }
 }
 
-@media (min-width: 1024px) and (min-height: 600px) {
+/* Pixel 6 */
+@media (min-width: 412px) and (min-height: 892px) {
+    html {
+        background: url(svg/backgrounds/background.svg) repeat,
+        url(svg/illustrations/moon.svg) no-repeat calc(50% + 30rem) 145rem / 60rem 60rem,
+        url(svg/backgrounds/top-background.svg) no-repeat center 40rem / 100rem 90rem,
+        url(svg/backgrounds/bottom-background.svg) no-repeat center 65rem / 100rem 90rem,
+        url(svg/illustrations/&.svg) no-repeat calc(50% - 30rem) 160rem / 50rem 50rem,
+        url(svg/illustrations/stars.svg) no-repeat center 135rem / 50rem 50rem,
+        url(svg/backgrounds/blue-curve.svg) no-repeat center 60rem / 120rem,
+        url(svg/illustrations/sun.svg) no-repeat calc(50% - 35rem) 270rem / 40rem,
+        url(svg/backgrounds/curve-fire.svg) no-repeat center 270rem / 120rem,
+        url(svg/illustrations/etherium-arcanum.svg) no-repeat calc(50% + 42.5rem) 340rem / 35rem,
+        url(svg/illustrations/AAA.svg) no-repeat center 325rem / 55rem,
+        url(svg/backgrounds/fire.svg) no-repeat center top;
+
+        background-color: black;
+
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        width: max-content;
+    }
+}
+
+@media (min-width: 1024px) {
     html {
         background: url(svg/backgrounds/background.svg) repeat,
         url(svg/illustrations/moon.svg) no-repeat calc(50% + 30rem) 145rem / 60rem 60rem,
@@ -336,7 +409,7 @@ body {
     border: 1px solid #484848;
     background: linear-gradient(180deg, #000 0%, #171516 100%);
     min-width: max-content;
-    height: fit-content;
+    height: -webkit-fill-available;
 }
 
 .trade-arbi-main-text {
