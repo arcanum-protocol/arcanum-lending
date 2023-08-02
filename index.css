@@ -23,8 +23,6 @@ html {
     url(svg/backgrounds/fire.svg) no-repeat center top / 100vw;
 
     background-color: black;
-
-    justify-content: flex-start;
     flex-wrap: nowrap;
 }
 
@@ -46,7 +44,6 @@ html {
 
         background-color: black;
 
-        justify-content: flex-start;
         flex-wrap: nowrap;
 
         width: fit-content;
@@ -71,7 +68,6 @@ html {
 
         background-color: black;
 
-        justify-content: flex-start;
         flex-wrap: nowrap;
 
         width: fit-content;
@@ -96,7 +92,6 @@ html {
 
         background-color: black;
 
-        justify-content: flex-start;
         flex-wrap: nowrap;
 
         width: max-content;
@@ -121,7 +116,6 @@ html {
 
         background-color: black;
 
-        justify-content: flex-start;
         flex-wrap: nowrap;
 
         width: max-content;
@@ -146,7 +140,6 @@ html {
 
         background-color: black;
 
-        justify-content: flex-start;
         flex-wrap: nowrap;
 
         width: max-content;
@@ -154,7 +147,7 @@ html {
 }
 
 /* Pixel 6 */
-@media (min-width: 412px) and (min-height: 892px) {
+@media (min-width: 412px) {
     html {
         background: url(svg/backgrounds/background.svg) repeat,
         url(svg/illustrations/moon.svg) no-repeat calc(50% + 30rem) 145rem / 60rem 60rem,
@@ -171,14 +164,36 @@ html {
 
         background-color: black;
 
-        justify-content: flex-start;
         flex-wrap: nowrap;
 
         width: max-content;
     }
 }
 
-@media (min-width: 1024px) {
+@media (width: 1920px) {
+    html {
+        background: url(svg/backgrounds/background.svg) repeat,
+        url(svg/illustrations/moon.svg) no-repeat calc(50% + 30rem) 145rem / 60rem 60rem,
+        url(svg/backgrounds/top-background.svg) no-repeat center 35rem / 100rem 90rem,
+        url(svg/backgrounds/bottom-background.svg) no-repeat center 65rem / 100rem 90rem,
+        url(svg/illustrations/&.svg) no-repeat calc(50% - 30rem) 160rem / 50rem 50rem,
+        url(svg/illustrations/stars.svg) no-repeat center 135rem / 50rem 50rem,
+        url(svg/backgrounds/blue-curve.svg) no-repeat center 60rem / 120rem,
+        url(svg/illustrations/sun.svg) no-repeat calc(50% - 35rem) 270rem / 40rem,
+        url(svg/backgrounds/curve-fire.svg) no-repeat center 270rem / 120rem,
+        url(svg/illustrations/etherium-arcanum.svg) no-repeat calc(50% + 42.5rem) 340rem / 35rem,
+        url(svg/illustrations/AAA.svg) no-repeat center 317rem / 55rem,
+        url(svg/backgrounds/fire.svg) no-repeat center top / 100vw;
+
+        background-color: black;
+
+        flex-wrap: nowrap;
+
+        width: auto;
+    }
+}
+
+@media (width: 1024px) {
     html {
         background: url(svg/backgrounds/background.svg) repeat,
         url(svg/illustrations/moon.svg) no-repeat calc(50% + 30rem) 145rem / 60rem 60rem,
@@ -195,7 +210,6 @@ html {
 
         background-color: black;
 
-        justify-content: flex-start;
         flex-wrap: nowrap;
 
         width: max-content;
@@ -219,9 +233,19 @@ body {
     align-items: center;
 }
 
+.enter-text {
+    width: 34.5rem;
+}
+
 .fcsb {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.frsb {
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -271,10 +295,6 @@ body {
     padding-top: 5.13rem;
 }
 
-.start-text {
-    width: 34.5rem;
-}
-
 .short-introduction {
     text-align: start;
 
@@ -286,7 +306,7 @@ body {
 
     color: #E7E7E7;
     font-family: 'Libre Baskerville';
-    font-size: 1.125rem;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: 400;
     line-height: 170%;
@@ -315,6 +335,7 @@ body {
     align-items: center;
 
     gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 .what {
@@ -340,14 +361,11 @@ body {
 .text-early-button {
     border-radius: 0.5rem;
     border: 1px solid #484848;
-
     margin-top: 5rem;
-
-    width: 34.5rem;
+    width: 25.5rem;
     height: 6rem;
     flex-shrink: 0;
-
-    background: url("svg/background.svg"), url("svg/backgrounds/button-background.svg"), #1b1b1b;
+    background: url(svg/background.svg), url(svg/backgrounds/button-background.svg), #1b1b1b;
 }
 
 .button-text {
@@ -359,7 +377,7 @@ body {
 .features {
     display: flex;
     z-index: 1;
-    margin-top: 7.5rem;
+    margin-top: 6.5rem;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
@@ -715,6 +733,7 @@ body::-webkit-scrollbar {
     grid-template-rows: 1fr 1fr;
 
     gap: 2.5rem;
+    width: 80rem;
 }
 
 .key-advantages {
@@ -898,4 +917,41 @@ body::-webkit-scrollbar {
     font: normal 400 1.07544rem/150% Libre Baskerville;
     text-align: center;
     letter-spacing: 0.01613rem;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5rem;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.socials-container {
+    width: 50rem;
+}
+
+.socials-text {
+    color: #ffffff;
+    font: normal 400 1.125rem/170% Libre Baskerville;
+    letter-spacing: 0.01688rem;
+    opacity: 0.45;
+}
+
+.socials-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+
+    cursor: pointer;
+}
+
+.socials-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
