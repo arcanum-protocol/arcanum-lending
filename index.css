@@ -427,7 +427,6 @@ body {
     border: 1px solid #484848;
     background: linear-gradient(180deg, #000 0%, #171516 100%);
     min-width: max-content;
-    height: -webkit-fill-available;
 }
 
 .trade-arbi-main-text {
