@@ -926,7 +926,7 @@ body::-webkit-scrollbar {
 
     margin-top: 5rem;
     gap: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .socials-container {
@@ -953,4 +953,24 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+.indexes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+    width: 100%;
+}
+
+.indexes-item {
+    color: #ffffff;
+    font: normal 400 1.125rem/170% Libre Baskerville;
+    letter-spacing: 0.01688rem;
+
+    cursor: pointer;
 }
