@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" class="fcc">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Arcanum</title>
     <link href="index.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link rel="icon" type="image/svg+xml" href="icons/logo.svg">
 </head>
 
@@ -21,385 +20,61 @@
     gtag('config', 'G-0KEG5HR7BP');
 </script>
 
-<body class="fcc">
-    <div class="header">
-        <div class="logo-name">
-            <img src="icons/logo.svg" alt="logo" class="arcanum-logo">
-            <div class="arcanum-text">arcanum</div>
+<body>
+    <div class="main">
+        <!-- <div class="navbar"> -->
+        <!--     <div class="navbar-item" href="https://api.arcanum.to/whitepaper"> -->
+        <!--         General -->
+        <!--     </div> -->
+
+        <!--     <div class="navbar-item" href="https://app.arcanum.to"> -->
+        <!--         About us -->
+      <!--     </div> -->
+
+      <!--     <div class="navbar-item" href="https://x.com/0xarcanum"> -->
+      <!--         Security -->
+      <!--     </div> -->
+
+      <!--     <div class="navbar-item" href="https://github.com/arcanum-protocol"> -->
+      <!--         Governance -->
+      <!--     </div> -->
+
+      <!--     <div class="navbar-item" href="https://github.com/arcanum-protocol"> -->
+      <!--         Product -->
+      <!--     </div> -->
+      <!-- </div> -->
+
+        <img src="icons/logo.svg" alt="logo" class="arcanum-logo">
+        <div class="arcanum-text">Arcanum protocol</div>
+        <div class="arcanum-description">We are a DeFi protocol that creates on-chain ETFs using our automated asset manager</div>
+
+
+        <div class="buttons">
+            <button class="big-button" onclick="window.location.href='https://docs.arcanum.to'">
+                <div class="button-text">Docs</div>
+            </button>
+            <button class="big-button" onclick="window.location.href='https://app.arcanum.to'">
+                <div class="button-text">Launch App</div>
+            </button>
         </div>
-        <div class="navbar">
-            <div onclick="window.location.href='https://app.arcanum.to/bali'">BALI index</div>
-            <div onclick="window.location.href='https://arcanum.to/whitepaper'">Whitepaper</div>
-            <div onclick="window.location.href='https://docs.arcanum.to'">Docs</div>
-            <div onclick="window.location.href='https://twitter.com/0xArcanum'">Contacts</div>
-        </div>
-    </div>
 
-    <div class="fccc enter-text">
-        <div>
-            <div class="small-text">Highly scalable fully decentralized</div>
-            <div class="ETF-text">ETF protocol</div>
-        </div>
-        <div class="description">
-            <div class="what">
-                Enabling generation of ETFs tracking the prices of crypto assets within multipools
+        <div class="contacts">
+            <div class="contact-item" href="https://api.arcanum.to/whitepaper">
+                Whitepaper
             </div>
-            <div class="why">
-                Access capital-efficient multi-asset liquidity with just one token of your choice
+            <div class="contact-item" href="https://app.arcanum.to">
+                Discord
+            </div>
+            <div class="contact-item" href="https://x.com/0xarcanum">
+                Twitter
+            </div>
+            <div class="contact-item" href="https://github.com/arcanum-protocol">
+                Github
             </div>
         </div>
-
-        <button class="text-early-button" onclick="window.location.href='https://app.arcanum.to/bali'">
-            <div class="button-text">TEST EARLY ALPHA</div>
-        </button>
-    </div>
-
-    <div class="features">
-        <div class="fcc features-box">
-            <div class="ARBI">
-                $BALI - the first decentralized ETF on BSC
-            </div>
-            <div class="based-on">
-                tracking the index of top-5 DeFi tokens by revenue on BSC
-            </div>
-
-            <div class="fcsb boxes">
-
-                <div class="actions-box">
-                    <div class="trade-arbi">
-                        <div class="trade-arbi-container">
-                            <div class="trade-arbi-main-text">
-                                Trade
-                                <img src="svg/in-text/pyramid.svg" alt="pyramid">
-                                BALI
-                            </div>
-                            <div class="trade-arbi-sub-text">
-                                You can buy, long, or short $BALI on DEXes or CEXes
-                            </div>
-                            <div class="dexes">
-                                <div class="fcsb dexes-display-params uniswap">
-                                    <div class="fccc fccc logo">
-                                        <img src="svg/other-brands-logos/uniswap.svg" alt="uniswap">
-                                    </div>
-                                    <div class="swap-widget">
-                                        <div class="tabs">
-                                            <p class="tabs-swap">Swap</p>
-                                            <p class="tabs-limit">Limit</p>
-                                            <p class="tabs-limit">P2P</p>
-                                        </div>
-                                        <div class="swap-widget-sell">
-                                            <div class="sell-container">
-                                                <p class="sell-text">You sell</p>
-                                                <div class="token-info">
-                                                    <img src="svg/other-brands-logos/usdc.svg" alt="usdc">
-                                                    <p class="token-name">USDC</p>
-                                                    <img src="svg/chevron-down.svg" alt="chevron" class="chevron">
-
-                                                    <p class="amount">0</p>
-                                                </div>
-                                                <div class="other-data">
-                                                    <p class="full-token-name">USD Coin</p>
-                                                    <p class="balance">~$0.9986</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="buy-container">
-                                            <p class="sell-text">You buy</p>
-                                            <div class="token-info">
-                                                <img src="svg/other-brands-logos/bitcoin.svg" alt="usdc">
-                                                <p class="token-name">BTC</p>
-                                                <img src="svg/chevron-down.svg" alt="chevron" class="chevron">
-                                            </div>
-                                            <div class="other-data">
-                                                <p class="full-token-name">USD Coin</p>
-                                                <p class="balance">~$0.9986</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="fcsb dexes-display-params dex-1inch">
-                                    <div class="fccc fccc logo">
-                                        <img src="svg/other-brands-logos/1inch.svg" alt="1inch">
-                                    </div>
-                                    <div class="swap-center">
-                                        <div class="tabs">
-                                            <p class="tabs-swap">Swap</p>
-                                            <p class="tabs-limit">Limit</p>
-                                            <p class="tabs-limit">P2P</p>
-                                        </div>
-                                        <div class="swap-widget-sell">
-                                            <div class="sell-container">
-                                                <p class="sell-text">You sell</p>
-                                                <div class="token-info">
-                                                    <img src="svg/other-brands-logos/usdc.svg" alt="usdc">
-                                                    <p class="token-name">USDC</p>
-                                                    <img src="svg/chevron-down.svg" alt="chevron" class="chevron">
-
-                                                    <p class="amount">0</p>
-                                                </div>
-                                                <div class="other-data">
-                                                    <p class="full-token-name">USD Coin</p>
-                                                    <p class="balance">~$0.9986</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="buy-container">
-                                            <p class="sell-text">You buy</p>
-                                            <div class="token-info">
-                                                <img src="svg/other-brands-logos/bitcoin.svg" alt="usdc">
-                                                <p class="token-name">BTC</p>
-                                                <img src="svg/chevron-down.svg" alt="chevron" class="chevron">
-                                            </div>
-                                            <div class="other-data">
-                                                <p class="full-token-name">USD Coin</p>
-                                                <p class="balance">~$0.9986</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="fcsb dexes-display-params kyberswap">
-                                    <div class="fccc fccc logo">
-                                        <img src="svg/other-brands-logos/kyberswap.svg" alt="kyberswap">
-                                    </div>
-                                    <div class="swap-widget">
-                                        <div class="tabs">
-                                            <p class="tabs-swap">Swap</p>
-                                            <p class="tabs-limit">Limit</p>
-                                            <p class="tabs-limit">P2P</p>
-                                        </div>
-                                        <div class="swap-widget-sell">
-                                            <div class="sell-container">
-                                                <p class="sell-text">You sell</p>
-                                                <div class="token-info">
-                                                    <img src="svg/other-brands-logos/usdc.svg" alt="usdc">
-                                                    <p class="token-name">USDC</p>
-                                                    <img src="svg/chevron-down.svg" alt="chevron" class="chevron">
-
-                                                    <p class="amount">0</p>
-                                                </div>
-                                                <div class="other-data">
-                                                    <p class="full-token-name">USD Coin</p>
-                                                    <p class="balance">~$0.9986</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="buy-container">
-                                            <p class="sell-text">You buy</p>
-                                            <div class="token-info">
-                                                <img src="svg/other-brands-logos/bitcoin.svg" alt="usdc">
-                                                <p class="token-name">BTC</p>
-                                                <img src="svg/chevron-down.svg" alt="chevron" class="chevron">
-                                            </div>
-                                            <div class="other-data">
-                                                <p class="full-token-name">USD Coin</p>
-                                                <p class="balance">~$0.9986</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="liquidity">
-                        <div class="fcsb liquidity-container">
-                            <div class="trade-arbi-main-text">
-                                Use
-                                <img src="svg/in-text/pyramid.svg" alt="pyramid">
-                                BALI liqudity
-                            </div>
-                            <div class="trade-arbi-sub-text">
-                                An ETF acts as a multi-asset AMM , which automatically rebalances underlying
-                                index
-                                tokens. ETFs enable for as low as `0.01%` trading fee.
-                            </div>
-                            <img src="svg/illustrations/use.svg" alt="circles-3d" class="use">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mint-burn">
-                    <div class="liquidity">
-                        <div class="fcsb liquidity-container">
-                            <div class="trade-arbi-main-text">
-                                Mint
-                                <img src="svg/in-text/pyramid.svg" alt="pyramid">
-                                BALI
-                            </div>
-                            <div class="trade-arbi-sub-text">
-                                Get $BALI by sending any index asset to the $BALI contract
-                            </div>
-                            <img src="svg/illustrations/mint.svg" alt="circles-3d" class="mint">
-                        </div>
-                    </div>
-
-                    <div class="burn">
-                        <div class="fcsb liquidity-container">
-                            <div class="trade-arbi-main-text">
-                                Redeem
-                                <img src="svg/in-text/pyramid.svg" alt="pyramid">
-                                BALI
-                            </div>
-                            <div class="trade-arbi-sub-text">
-                                Burn your $BALI and receive any index asset from the multipool
-                            </div>
-                            <img src="svg/illustrations/burn.svg" alt="circles-3d" class="burn-icon">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="contact-item" href="mailto:info@arcanum.to">
+            info@arcanum.to
         </div>
     </div>
-
-    <div class="ETF-what-is">
-        <div class="ETF-what-is-container">
-            <div class="clear-text">DEX</div>
-
-            <div class="point">
-                Leverage a portfolio of assets with the highest revenues via an ETF
-            </div>
-
-            <div class="clear-text">ASSET MANAGEMENT PLATFORM</div>
-
-            <div class="point">
-                Access multi asset
-                liquidity with just one token
-            </div>
-        </div>
-    </div>
-
-    <div class="fcsb key-advantages">
-        <div class="trade-earn">
-            Trade with low fees and earn higher rewards
-        </div>
-        <div class="multipool">
-            Direct your trades to balance the multipool assets
-            and earn a portion of fees for your actions
-        </div>
-
-        <div class="fcsb key-advantages-icons">
-            <div class="fcsb fccc key-advantages-point">
-                <img src="icons/slippage.svg" alt="kyberswap">
-                <div class="fcsb key-advantages-point-text">
-                    No slippage due
-                    to dynamic fees
-                </div>
-            </div>
-            <div class="fcsb fccc key-advantages-point">
-                <img src="icons/low-fee.svg" alt="kyberswap">
-                <div class="fcsb key-advantages-point-text">
-                    Low fee
-                    starting from 0,1%
-                </div>
-            </div>
-            <div class="fcsb fccc key-advantages-point">
-                <img src="icons/oracle.svg" alt="kyberswap">
-                <div class="fcsb key-advantages-point-text">
-                    Oracle prices
-                </div>
-            </div>
-            <div class="fcsb fccc key-advantages-point">
-                <img src="icons/earn.svg" alt="kyberswap">
-                <div class="fcsb key-advantages-point-text">
-                    Earn by moving ETFs to balance
-                </div>
-            </div>
-            <div class="fcsb fccc key-advantages-point">
-                <img src="icons/rewards.svg" alt="kyberswap">
-                <div class="fcsb key-advantages-point-text">
-                    $AAA rewards for ETFs minters
-                </div>
-            </div>
-            <div class="fcsb fccc key-advantages-point">
-                <img src="icons/mev.svg" alt="kyberswap">
-                <div class="fcsb key-advantages-point-text">
-                    MEV strategies friendly
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="aaa">
-        <div class="main-text">
-            Earn from $AAA incentives
-        </div>
-        <div class="sub-text">
-            $AAA is the governance token for Arcanum
-            used for voting for the new ETFs and their composition
-        </div>
-
-        <div class="token-thesis">
-            <div class="fcsb left-right-items">
-                <div class="fccc token-thesis-text">
-                    $AAA - is and ERC-20 deflationary token
-                </div>
-                <div class="fccc token-thesis-text">
-                    $AAA rewards for ETF minters
-                </div>
-            </div>
-            <div class="fcsb left-right-items">
-                <div class="fccc token-thesis-text">
-                    Farm $AAA Boost farming rewards with $AAA staking
-                </div>
-                <div class="fccc token-thesis-text">
-                    Sell your $AAA voting fcsb rights for passive income
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="government">
-            <div class="government-container">
-                <div class="main-detail">
-                    Governed by the Community
-                </div>
-
-                <div class="fcsb sub-detail">
-                    <div class="first">Vote for liqudity managment</div>
-                    <div class="second">Vote for new ETFs</div>
-                    <div class="tree">Delegate your votes</div>
-                    <div class="fourth">Make proposals on community forum</div>
-                    <div class="five">Vote for incentives</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="socials">
-            <div class="socials-text">
-                Join the community
-            </div>
-            <div class="socials-container">
-                <div class="socials-icons">
-                    <img src="svg/socials/twitter.svg" alt="twitter" class="socials-icon"
-                        onclick="window.location.href='https://twitter.com/0xArcanum'">
-                    <img src="svg/socials/telegram.svg" alt="telegram" class="socials-icon"
-                        onclick="window.location.href='https://t.me/arcanumto'">
-                    <img src="svg/socials/discord.svg" alt="discord" class="socials-icon"
-                        onclick="window.location.href='https://discord.gg/8Q2Q4QJ8'">
-                    <img src="svg/socials/github.svg" alt="github" class="socials-icon"
-                        onclick="window.location.href='https://github.com/arcanum-protocol'">
-                </div>
-            </div>
-        </div>
-
-        <div class="indexes">
-            <div class="indexes-item" onclick="window.location.href='https://app.arcanum.to/arbi'">
-                Arbitrum Altcoin Index
-            </div>
-            <div class="indexes-item" onclick="window.location.href='https://app.arcanum.to/bali'">
-                Binance Altcoin Index
-            </div>
-            <div class="indexes-item" onclick="window.location.href='https://app.arcanum.to/cpt'">
-                Crypto X Index
-            </div>
-        </div>
-    </div>
-
 </body>
-
 </html>
