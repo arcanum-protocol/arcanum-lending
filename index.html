@@ -22,41 +22,217 @@
 
 <body>
     <div class="main">
-        <!-- <div class="navbar"> -->
-        <!--     <div class="navbar-item" href="https://api.arcanum.to/whitepaper"> -->
-        <!--         General -->
-        <!--     </div> -->
+       <div class="navbar-wrapper">
+             <div class="navbar"> 
+                 <a class="navbar-item" href="#General"> 
+                     General
+                 </a> 
 
-        <!--     <div class="navbar-item" href="https://app.arcanum.to"> -->
-        <!--         About us -->
-      <!--     </div> -->
+                 <a class="navbar-item" href="#Products"> 
+                     Products 
+               </a> 
 
-      <!--     <div class="navbar-item" href="https://x.com/0xarcanum"> -->
-      <!--         Security -->
-      <!--     </div> -->
+               <a class="navbar-item" href="#DeFi-ETFs"> 
+                   DeFi ETFs 
+               </a> 
 
-      <!--     <div class="navbar-item" href="https://github.com/arcanum-protocol"> -->
-      <!--         Governance -->
-      <!--     </div> -->
+               <a class="navbar-item" href="#Why-Arcanum"> 
+                   Why Arcanum 
+               </a> 
 
-      <!--     <div class="navbar-item" href="https://github.com/arcanum-protocol"> -->
-      <!--         Product -->
-      <!--     </div> -->
-      <!-- </div> -->
+               <a class="navbar-item" href="#How-to-use"> 
+                   How to use 
+               </a> 
+           </div> 
 
-        <img src="icons/logo.svg" alt="logo" class="arcanum-logo">
-        <div class="arcanum-text">Arcanum protocol</div>
-        <div class="arcanum-description">We are a DeFi protocol that creates on-chain ETFs using our automated asset manager</div>
+           <div class="big-separator">
+           </div>
+       </div> 
+
+       <div class="tab-folder">
+            <div id="Products" class="tab-content">
+                <h1 class="arcanum-text">Products</h1>
+                <div class="product-list"> 
+                    <div class="product"> 
+                        <h2 class="product-title">
+                            On-chain ETFs
+                        </h2>
+                        <p class="product-description">
+                            Arcanum enables generation of decentralized ETFs tracking 
+                            the prices of crypto assets within multipools and unique 
+                            asset management opportunities for ETFs holders.
+                        </p>
+                    </div> 
+                    <div class="product"> 
+                        <h2 class="product-title">
+                            Automated Asset Manager
+                        </h2>
+                        <p class="product-description">
+                            Arcanum protocol is built on top of AAM mechanism enabling 
+                            truly DeFi diversification, portfolio rebalancing and risk 
+                            mitigation. Arcanum exposes AAM mechanics for permissionless use.
+                        </p>
+                    </div> 
+                </div> 
+            </div>
+            <div id="DeFi-ETFs" class="tab-content">
+                <h1 class="arcanum-text">DeFi ETFs</h1>
+                <div class="defi-etfs-frame">
+                    <div class="defi-etfs-block">
+                        <h2 class="defi-etfs-title">Crypto X index ($CPT)</h2>
+                        <a class="defi-etfs-address" href="">Coming soon</a>
+                        <div class="defi-etfs-text-wrapper">
+                            <p class="defi-etfs-text">
+                                Crypto X is a
+                            </p>
+                            <div class="defi-etfs-highlighted-red">
+                                market cap weighted
+                            </div> 
+                             <p class="defi-etfs-text">   
+                                index that contains X largest by market cap crypto assets that exist on Arbitrum.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="defi-etfs-block">
+                        <h2 class="defi-etfs-title">Arbitrum Ecosystem Index ($ARBI)</h2>
+                        <a 
+                            class="defi-etfs-address" 
+                            href="https://arbiscan.io/address/0x4810E5A7741ea5fdbb658eDA632ddfAc3b19e3c6"
+                        >
+                            0x4810....e3c6
+                        </a>
+                        <div class="defi-etfs-text-wrapper">
+                            <p class="defi-etfs-text">
+                                Arbitrum ecosystem index ($ARBI) is a
+                            </p>
+                            <div class="defi-etfs-highlighted-purple">
+                                DAO-weighted
+                            </div> 
+                             <p class="defi-etfs-text">   
+                                index that contains tokens of Arbitrum DeFi protocols.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Why-Arcanum" class="tab-content">
+                <h1 class="arcanum-text">Why Arcanum</h1>
+                <div class="why-arcanum-frame">
+
+                    <div class="why-arcanum-row">
+                        <div class="why-arcanum-text-frame1">
+                            <p class="why-arcanum-text-main"> 
+                                Low fees. 
+                                <div class="why-arcanum-text-secondary"> 
+                                    AAM is a portfolio management 
+                                    tool that charges minimal fee for trading as 
+                                    it is beneficial for management.
+                                </div>
+                            </p>
+                        </div>
+
+                        <div class="why-arcanum-text-frame1">
+                            <p class="why-arcanum-text-main"> 
+                                $AAA rewards for ETF minters. 
+                                <div class="why-arcanum-text-secondary"> 
+                                    Liquidity providers of AAM are allowed to farm Arcanum 
+                                    protocol token and ETH that was earned from fees
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="why-arcanum-row">
+                        <div class="why-arcanum-text-frame2">
+                            <p class="why-arcanum-text-main"> 
+                                Access to multi-asset portfolio with a single token.
+                                <div class="why-arcanum-text-secondary"> 
+                                    Arcanum’s AAM allows to mint Multitool shares within 
+                                    a single token, what makes it cheapest opportunity 
+                                    for diversification.
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="why-arcanum-row">
+                        <div class="why-arcanum-inner-row">
+                            <div class="why-arcanum-text-frame1">
+                                <p class="why-arcanum-text-main"> 
+                                    No price impact.
+                                    <div class="why-arcanum-text-secondary"> 
+                                    AAM use oracle price for trading portfolio.
+                                    </div>
+                                </p>
+                            </div>
+                            <div class="why-arcanum-text-frame1">
+                                <p class="why-arcanum-text-main"> 
+                                    Earn by moving ETF to balance.
+                                    <div class="why-arcanum-text-secondary"> 
+                                    AAM has mechanics that reward users for balancing ETF
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="why-arcanum-text-frame1">
+                            <p class="why-arcanum-text-main"> 
+                                MEV strategies friendly.
+                                <div class="why-arcanum-text-secondary"> 
+                                    Multipool provides Multiswap - a cheap and convinient 
+                                    tool for MEV searchers. Portfolio management is 
+                                    also optimised for MEV use.
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="How-to-use" class="tab-content">
+                <h1 class="arcanum-text">How to use</h1>
+                <div class="how-to-use-container">
+                    <a class="how-to-use-row" href="">
+                        <p class="how-to-use-text">Trade/Mint/Redeem ETFs</p>
+                        <img src="svg/href.svg" alt="" class="how-to-use-href">
+                    </a>
+                </div>
+                <div class="how-to-use-container">
+                    <a class="how-to-use-row" href="">
+                        <p class="how-to-use-text">Do cheap diversification</p>
+                        <img src="svg/href.svg" alt="" class="how-to-use-href">
+                    </a>
+                </div>
+                <div class="how-to-use-container">
+                    <a class="how-to-use-row" href="">
+                        <p class="how-to-use-text">Rewards from farming</p>
+                        <img src="svg/href.svg" alt="" class="how-to-use-href">
+                    </a>
+                </div>
+            </div>
+            <div id="General" class="tab-content">
+                <img src="icons/logo.svg" alt="logo" class="arcanum-logo">
+                <h1 class="arcanum-text">Arcanum protocol</h1>
+                <div class="arcanum-description">
+                    A highly scalable fully decentralized ETF protocol.<br/><br/>
+                    Arcanum is a protocol built upon a new crypto primitive - AAM (Automated Asset Manager) 
+                    utilizing multipools that enables on-chain ETFs. Arcanum is enforced by unique balancing 
+                    mechanisms of the ETFs' portfolio approved by the governance.
+                </div>
 
 
-        <div class="buttons">
-            <button class="big-button" onclick="window.location.href='https://docs.arcanum.to'">
-                <div class="button-text">Docs</div>
-            </button>
-            <button class="big-button" onclick="window.location.href='https://app.arcanum.to'">
-                <div class="button-text">Launch App</div>
-            </button>
+                <div class="buttons">
+                    <button class="big-button" onclick="window.location.href='https://docs.arcanum.to'">
+                        <div class="button-text">Docs</div>
+                    </button>
+                    <button class="big-button" onclick="window.location.href='https://app.arcanum.to'">
+                        <div class="button-text">Launch App</div>
+                    </button>
+                </div>
+
+            </div>
         </div>
+
+
+       <div class="big-separator">
+       </div>
 
         <div class="contacts">
             <div class="contact-item" onClick="window.open('https://api.arcanum.to/whitepaper','_newtab');">

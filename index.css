@@ -10,7 +10,21 @@ body {
     margin-top: 2%;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.tab-folder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
     flex-direction: column;
 }
 
@@ -22,9 +36,8 @@ body {
 .arcanum-description {
     margin: auto;
 
-    width: 276px;
-    height: 84px;
-    flex-shrink: 0;
+    max-width: 484px;
+    min-height: 201px;
 
     color: #FFF;
 
@@ -105,16 +118,13 @@ body {
     margin-left: 30px;
     margin-right: 30px;
     flex-flow: row wrap;
-    gap: 20px;
-}
-
-.navbar-separator {
-    width: 1px;
-    height: 30px;
-    background-color: #535353;
+    width: auto;
+    row-gap: 10px;
+    column-gap: 30px;
 }
 
 .navbar-item {
+    text-decoration: none;
     color: #fff;
     text-align: center;
     font-family: Inconsolata;
@@ -127,4 +137,316 @@ body {
 
 .navbar-item:hover {
     cursor: pointer;
+    font-weight: bold;
+    color: #9A9A9A;
+}
+
+.navbar-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.big-separator {
+    height: 1px;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #3D3D3D;
+}
+
+.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
+    display: none;
+}
+.tab-folder > :last-child, .tab-folder > .tab-content:target {
+    display: flex;
+}
+
+.product-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.product-title {
+    color: #FFF;
+
+    text-align: center;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Inconsolata;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 33px */
+    letter-spacing: 0.22px;
+}
+
+.product-description {
+    color: #FFF;
+
+    max-width: 323px;
+    text-align: center;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.18px;
+}
+
+.why-arcanum-frame {
+    max-width: 660px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.why-arcanum-row {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    gap: 20px;
+
+    flex-flow: row wrap;
+}
+
+.why-arcanum-inner-row {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 300px; 
+    min-width: 150px; 
+
+    width: fit-content;
+
+    test-align: justify;
+    flex: 1 1;
+
+}
+
+.why-arcanum-text-frame1 {
+    max-width: 300px;
+    min-width: 150px;
+    test-align: justify;
+
+    flex: 1 1;
+}
+
+.why-arcanum-text-frame2 {
+    max-width: 600px;
+    test-align: justify;
+
+    flex: 1 1;
+}
+
+.why-arcanum-text-main {
+    color: #FFF;
+
+    display: inline;
+
+    text-align: center;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.18px;
+}
+
+.why-arcanum-text-secondary {
+    color: #535353;
+
+    display: inline;
+
+    test-align: center;
+
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.18px;
+}
+
+.defi-etfs-frame {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-flow: row wrap;
+}
+
+.defi-etfs-block {
+    border-radius: 0.25rem;
+    border: 1px solid #404040;
+    background: #0C0A09;
+
+    color: #fff;
+    max-width: 300px;
+    min-width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.defi-etfs-title {
+   margin: 0px 15px;
+   margin-top: 20px;
+   max-width: 210px;
+
+   color: #FFF;
+
+   text-align: center;
+   leading-trim: both;
+
+   text-edge: cap;
+   font-family: Inconsolata;
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 150%; /* 33px */
+   letter-spacing: 0.22px; 
+}
+
+.defi-etfs-address {
+    text-decoration: none;
+    color: #FFF;
+
+    text-align: center;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.18px;
+}
+
+.defi-etfs-address:hover {
+    color: #9A9A9A;
+}
+
+.defi-etfs-text-wrapper {
+    display: block;
+    margin: 0px 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    max-width: 253px;
+}
+
+.defi-etfs-text {
+    display: inline;
+    color: #FFF;
+
+    text-align: center;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.18px;
+}
+
+.defi-etfs-highlighted-purple {
+    display: inline;
+
+    background: linear-gradient(109deg, #1758FF 37.07%, #8804F0 80.66%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.18px;
+}
+
+.defi-etfs-highlighted-red {
+    display: inline;
+    color: #B94646;
+
+    text-align: center;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.18px;
+}
+
+.how-to-use-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-to-use-row {
+    display: flex;
+    align-items: bottom;
+    margin: 0;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.how-to-use-text {
+    margin: 0;
+    text-decoration: none;
+
+    color: #FFF;
+
+    text-align: center;
+    leading-trim: both;
+
+    text-edge: cap;
+    font-family: Inconsolata;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    letter-spacing: 0.18px;
+}
+
+.how-to-use-href {
+    color: red;
+}
+
+.how-to-use-row:hover {
+    .how-to-use-text {
+        color: #9A9A9A;
+    }
 }
