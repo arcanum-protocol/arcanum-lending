@@ -411,7 +411,7 @@ body {
 
 .how-to-use-container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -442,7 +442,6 @@ body {
 }
 
 .how-to-use-href {
-    color: red;
 }
 
 .how-to-use-row:hover {
