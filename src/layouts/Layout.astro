@@ -1,3 +1,10 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+
+import { ClientRouter } from "astro:transitions";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +12,109 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<link rel="stylesheet" href="https://use.typekit.net/ona7xhd.css">
+		<link rel="stylesheet" href="/global.css" />
+		<title>Arcanum</title>
+		<ClientRouter />
 	</head>
-	<body>
-		<slot />
+	<body class="bg-layer-floor-0 size-full h-svh flex flex-col justify-between">
+		<Header />
+		<div class="hidden second:flex overflow-auto pl-[217px] main:pl-[307px] gap-4 main:pt-20 py-0 main:gap-11 flex-1 flex-col justify-evenly second:justify-start size-full second:bg-[url(/bgs/bg.svg)] bg-contain bg-no-repeat bg-right">
+			<slot />
+			<slot name="actions" />
+		</div>
+		<div class="block second:hidden size-full overflow-auto">
+			<div class="size-full px-2 flex flex-col gap-2 pt-5 *:rounded-[1px] *:border *:border-fill-secondary *:p-4">
+				<div class="flex flex-col gap-4 max-w-[344px] w-full mx-auto">
+					<div class="w-full h-[149px] bg-[url(/mobile/index.svg)] bg-no-repeat bg-contain" />
+					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Arcanum is a permissionless 
+						automated portfolio manager built 
+						upon a new crypto primitive - 
+						<span class="text-sm after:inline-block text-brand-secondary bg-clip-text font-droid after:ml-1 after:*:fill-brand-secondary after:size-3 after:bg-[url(/icons/link.svg)]">Multipool</span></span>
+
+					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Multipool enables the creation of 
+						tokens fully backed by existing on-
+						chain assets, ensuring efficient 
+						management through trading 
+						incentives. It allows users to gain 
+						<span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">exposure to a diversified multi-
+						asset portfolio by contributing just 
+						a single asset</span></span></span>
+				</div>
+
+				<div class="flex flex-col gap-4 max-w-[344px] w-full mx-auto">
+					<div class="w-full h-[84px] bg-[url(/mobile/manager.svg)] bg-no-repeat bg-contain" />
+					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Arcanum decoupled portfolio 
+						management into three key 
+						components: <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">liquidity provision, 
+						strategy management,</span></span> and <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">strategy 
+						execution</span></span></span>
+
+					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">This approach allows users 
+						to allocate funds to a variety 
+						of strategies designed 
+						by professionals. Portfolio managers 
+						can focus on selecting asset 
+						allocations, while traders help 
+						rebalance pools and earn incentives 
+						for their contributions</span>
+				</div>
+
+				<div class="flex flex-col gap-4 max-w-[344px] w-full mx-auto">
+					<div class="w-full h-[101px] bg-[url(/mobile/arev.svg)] bg-no-repeat bg-contain" />
+
+					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Arcanum's permissionless portfolios 
+						are secured by the <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">$AREV token, 
+						which has a floor price backed 
+						by the ecosystem's native token</span></span></span>
+
+					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]"><span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">$AREV is used in the Proof-of-Stake 
+						(PoS)</span></span> mechanism of Arcanum's oracle 
+						network, which provides portfolio 
+						share prices. The token has 
+						a limited supply and increases its 
+						floor price each time the protocol 
+						generates revenue from portfolio 
+						management</span>
+				</div>
+
+				<div class="flex flex-col gap-8 max-w-[344px] w-full mx-auto">
+					<div class="w-full h-[101px] bg-[url(/mobile/use.svg)] bg-no-repeat bg-contain" />
+				
+					<div class="flex flex-col gap-0">
+						<span class="align-baseline pt-4 whitespace-pre-line font-namu font-[400] text-2xl leading-[31.2px] text-primary uppercase"><span class="inline-block text-tertiary text-lg leading-3 align-top mr-2">1</span>Create your own 
+							tokenized portfolio</span>
+						<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Create a tokenised strategy 
+							and receive fees. <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">The more popular 
+							the strategy is - the more fees you 
+							can get</span></span></span>
+
+						<span class="align-baseline pt-6 whitespace-pre-line font-namu font-[400] text-2xl leading-[31.2px] text-primary uppercase"><span class="inline-block text-tertiary text-lg leading-3 align-top mr-2">2</span>arm $AREV token</span>
+						<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Provide liquidity to portfolios 
+							to <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">farm Arcanum revenue token</span></span></span>
+					
+						<span class="align-baseline pt-6 whitespace-pre-line font-namu font-[400] text-2xl leading-[31.2px] text-primary uppercase"><span class="inline-block text-tertiary text-lg leading-3 align-top mr-2">3</span>Stake $AREV token</span>
+						<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Secure <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">Arcanum’s oracle network</span></span> 
+							by delegating $AREV token 
+							to validators</span>
+
+						<span class="align-baseline pt-6 whitespace-pre-line font-namu font-[400] text-2xl leading-[31.2px] text-primary uppercase"><span class="inline-block text-tertiary text-lg leading-3 align-top mr-2">4</span>Use portfolios as 
+						liquidity source</span>
+						<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]"><span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">Become an on-chain trader</span></span> or use 
+							multipools in your existing trading 
+							strategies</span>
+					</div>
+				</div>
+
+				<div class="flex flex-row gap-2 border-none w-full">
+					<button type="button" class="bg-transparent font-droid text-sm after:ml-1 after:text-brand-primary after:bg-no-repeat after:bg-bottom after:inline-block after:size-4 after:bg-[url(/icons/link.svg)] rounded-[1px] border-fill-secondary py-2 border text-brand-secondary w-full">Launch app</button>
+					<button type="button" class="bg-transparent font-droid text-sm after:ml-1 after:text-brand-primary after:bg-no-repeat after:bg-bottom after:inline-block after:size-4 after:bg-[url(/icons/link.svg)] rounded-[1px] border-fill-secondary py-2 border text-brand-secondary w-full">Docs</button>
+				</div>
+			</div>
+
+		</div>
+		<Footer>
+			<slot name="footer"/>
+		</Footer>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
