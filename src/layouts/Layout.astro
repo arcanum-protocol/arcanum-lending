@@ -23,7 +23,7 @@ import { ClientRouter } from "astro:transitions";
 			<slot />
 			<slot name="actions" />
 		</div>
-		<div class="block second:hidden size-full overflow-auto">
+		<div class="block second:hidden size-full overflow-auto my-2">
 			<div class="size-full px-2 flex flex-col gap-2 pt-5 *:rounded-[1px] *:border *:border-fill-secondary *:p-4">
 				<div class="flex flex-col gap-4 max-w-[344px] w-full mx-auto">
 					<div class="w-full h-[149px] bg-[url(/mobile/index.svg)] bg-no-repeat bg-contain" />
@@ -104,11 +104,6 @@ import { ClientRouter } from "astro:transitions";
 							multipools in your existing trading 
 							strategies</span>
 					</div>
-				</div>
-
-				<div class="flex flex-row gap-2 border-none w-full">
-					<button type="button" class="bg-transparent font-droid text-sm after:ml-1 after:text-brand-primary after:bg-no-repeat after:bg-bottom after:inline-block after:size-4 after:bg-[url(/icons/link.svg)] rounded-[1px] border-fill-secondary py-2 border text-brand-secondary w-full">Launch app</button>
-					<button type="button" class="bg-transparent font-droid text-sm after:ml-1 after:text-brand-primary after:bg-no-repeat after:bg-bottom after:inline-block after:size-4 after:bg-[url(/icons/link.svg)] rounded-[1px] border-fill-secondary py-2 border text-brand-secondary w-full">Docs</button>
 				</div>
 			</div>
 
