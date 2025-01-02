@@ -13,6 +13,6 @@ export default defineConfig({
 		inlineStylesheets: "always",
 	},
 
-	output: "static",
+	output: "server",
 	adapter: vercel(),
 });
