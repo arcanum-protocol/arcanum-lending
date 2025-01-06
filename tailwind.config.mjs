@@ -64,6 +64,9 @@ export default {
 					tetrary: "#646466",
 					quaternary: "#8A8B8C",
 					accent: "#FFFFFF",
+					brand: {
+						secondary: "#3D73FF",
+					},
 				},
 			},
 		},
