@@ -5,6 +5,8 @@ export default {
 		screens: {
 			main: "1231px",
 			second: "860px",
+			lg: "1024px",
+			xl: "1280px",
 		},
 		fontFamily: {
 			droid: ["droid-sans-mono", "sans-serif"],

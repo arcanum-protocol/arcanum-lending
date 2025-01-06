@@ -9,7 +9,7 @@ import { ClientRouter } from "astro:transitions";
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<link rel="stylesheet" href="https://use.typekit.net/ona7xhd.css">
@@ -19,7 +19,7 @@ import { ClientRouter } from "astro:transitions";
 	</head>
 	<body class="bg-layer-floor-0 size-full h-svh flex flex-col justify-between">
 		<Header />
-		<div class="hidden second:flex overflow-auto pl-[217px] main:pl-[307px] gap-4 main:pt-20 py-0 main:gap-11 flex-1 flex-col justify-evenly second:justify-start size-full second:bg-[url(/bgs/bg.svg)] bg-contain bg-no-repeat bg-right">
+		<div class="hidden second:flex overflow-auto pl-[217px] main:pl-[307px] gap-4 xl:pt-20 py-0 xl:gap-11 flex-1 flex-col justify-evenly second:justify-start size-full second:bg-[url(/bgs/bg.svg)] bg-contain bg-no-repeat bg-right">
 			<slot />
 			<slot name="actions" />
 		</div>
