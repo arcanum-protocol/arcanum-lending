@@ -18,7 +18,7 @@ import { ClientRouter } from "astro:transitions";
 		<ClientRouter />
 	</head>
 	<body class="bg-layer-floor-0 size-full h-svh flex flex-col justify-between">
-		<Header />
+		<Header path={Astro.url.pathname} />
 		<div class="hidden second:flex overflow-auto pl-[217px] main:pl-[307px] gap-4 xl:pt-8 py-0 xl:gap-11 flex-1 flex-col justify-evenly second:justify-start size-full second:bg-[url(/bgs/bg.svg)] bg-contain bg-no-repeat bg-right">
 			<slot />
 			<slot name="actions" />
