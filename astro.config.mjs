@@ -9,8 +9,10 @@ import vercel from "@astrojs/vercel";
 export default defineConfig({
 	integrations: [tailwind(), compress()],
 
+	site: "https://arcanum-landing.vercel.app/",
 	build: {
 		inlineStylesheets: "always",
+		format: "preserve",
 	},
 
 	output: "static",
