@@ -2,9 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
+<script>
+	const launch = document.querySelector("button.launch");
+	const docs = document.querySelector("button.docs");
+	
+	launch?.addEventListener("click", () => {
+		window.location.href = "https://app.arcanum.to";
+	});
+	docs?.addEventListener("click", () => {
+		window.location.href = "https://docs.arcanum.to";
+	});
+</script>
+
 <Layout page="/">
 	<span class="font-droid whitespace-pre-line text-primary leading-[21px] xl:pt-12">Arcanum is a permissionless automated portfolio
-		manager built upon a new crypto primitive - <span class="after:inline-block text-fill-brand-secondary bg-clip-text font-droid after:ml-1 after:*:fill-brand-secondary after:size-3 after:bg-[url(/icons/link.svg)]">Multipool</span>
+		manager built upon a new crypto primitive - <a class="cursor-pointer" href="https://docs.arcanum.to/basics/asset-management"><span class="after:inline-block text-fill-brand-secondary bg-clip-text font-droid after:ml-1 after:*:fill-brand-secondary after:size-3 after:bg-[url(/icons/link.svg)]">Multipool</span></a>
 	</span>
 
 	<span class="font-droid whitespace-pre-line text-primary leading-[21px]">Multipool enables the creation of tokens fully backed 
@@ -15,8 +27,8 @@ import Layout from "../layouts/Layout.astro";
 	</span>
 
 	<div slot="actions" class="gap-4 flex flex-row *:border *:rounded-[1px] *:border-fill-secondary text-fill-brand-secondary font-droid">
-		<button class="w-[186px] bg-transparent h-[66px] after:size-3 after:bg-[url(/icons/link.svg)] after:inline-block after:ml-2">Launch app</button>
-		<button class="w-[135px] bg-transparent h-[66px] after:size-3 after:bg-[url(/icons/link.svg)] after:inline-block after:ml-2">Docs</button>
+		<button class="launch w-[186px] bg-transparent h-[66px] after:size-3 after:bg-[url(/icons/link.svg)] after:inline-block after:ml-2">Launch app</button>
+		<button class="docs w-[135px] bg-transparent h-[66px] after:size-3 after:bg-[url(/icons/link.svg)] after:inline-block after:ml-2">Docs</button>
 	</div>
 
 	<span slot="footer" class="hidden second:block size-full text-primary font-namu font-semibold uppercase bg-[url(/footers/main.svg)] min-[1277px]:bg-[url(/footers/main_second.svg)] bg-left-bottom bg-no-repeat" />
