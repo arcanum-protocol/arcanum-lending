@@ -77,6 +77,13 @@ export default defineConfig({
 				viewport: { width: 1440, height: 700 },
 			},
 		},
+		{
+			name: "Safari",
+			use: {
+				...devices["Desktop Safari"],
+				viewport: { width: 1440, height: 700 },
+			}
+		}
 	],
 
 	/* Run your local dev server before starting the tests */
