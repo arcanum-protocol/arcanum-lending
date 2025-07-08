@@ -2,117 +2,142 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import { ClientRouter } from "astro:transitions";
+import GradientText from "../components/GradientText.astro";
 
 const currentPage = Astro.props.page;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="selection:bg-[#0148fe] selection:text-white">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			href="/favicon-96x96.png"
+			sizes="96x96"
+		/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon.png"
+		/>
 		<meta name="apple-mobile-web-app-title" content="MyWebSite" />
 		<link rel="manifest" href="/site.webmanifest" />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="stylesheet" href="https://use.typekit.net/ona7xhd.css">
+		<link rel="stylesheet" href="https://use.typekit.net/ona7xhd.css" />
 		<link rel="stylesheet" href="/global.css" />
 		<ClientRouter />
 		<title>Arcanum</title>
 	</head>
-	<body class="bg-layer-floor-0 size-full h-svh flex flex-col justify-between">
+	<body
+		class="bg-layer-floor-0 size-full h-svh flex flex-col justify-between"
+	>
 		<Header path={currentPage} />
-		<div class="hidden second:flex overflow-auto pl-[217px] main:pl-[307px] pt-8 gap-11 flex-1 flex-col justify-evenly second:justify-start size-full second:bg-[url(/bgs/bg.svg)] bg-contain bg-no-repeat bg-right">
+		<div
+			class="hidden second:flex overflow-auto pl-[217px] main:pl-[307px] pt-8 gap-11 flex-1 flex-col justify-evenly second:justify-start size-full second:bg-[url(/bgs/bg.svg)] bg-contain bg-no-repeat bg-right"
+		>
 			<slot />
 			<slot name="actions" />
 		</div>
 		<div class="block second:hidden size-full overflow-auto my-2">
-			<div class="size-full px-2 flex flex-col gap-2 pt-5 *:rounded-[1px] *:border *:border-fill-secondary *:p-4">
-				<div class="flex flex-col gap-4 max-w-[344px] w-full mx-auto">
-					<div class="w-full h-[149px] bg-[url(/mobile/index.svg)] bg-no-repeat bg-contain" />
-					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Arcanum is a permissionless 
-						automated portfolio manager built 
-						upon a new crypto primitive - 
-						<a class="cursor-pointer" href="https://docs.arcanum.to/basics/asset-management"><span class="text-sm after:inline-block text-brand-secondary bg-clip-text font-droid after:ml-1 after:*:fill-brand-secondary after:size-3 after:bg-[url(/icons/link.svg)]">Multipool</span></span></a>
+			<div
+				class="size-full px-2 flex flex-col gap-2 pt-5 *:rounded-[1px] *:p-4"
+			>
+				<div class="flex flex-col gap-4 max-w-[360px] w-full mx-auto">
+					<p
+						class="w-full text-primary text-[40px] font-namu uppercase font-semibold leading-[100%]"
+					>
+						A New Era <br />for On-Chain Liquidity
+					</p>
+					<p
+						class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]"
+					>
+						Arcanum introduces a new crypto <br /> primitive for a decentralized
+						on-chain liquidity provision: the <a
+							class="cursor-pointer"
+							href="https://docs.arcanum.to/basics/asset-management"
+							><span
+								class="after:inline-block text-fill-brand-secondary bg-clip-text font-droid after:ml-1 after:*:fill-brand-secondary after:size-3 after:bg-[url(/icons/link.svg)]"
+								>Target-Weight Market Maker</span
+							></a
+						>
+					</p>
 
-					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Multipool enables the creation of 
-						tokens fully backed by existing on-
-						chain assets, ensuring efficient 
-						management through trading 
-						incentives. It allows users to gain 
-						<span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">exposure to a diversified multi-
-						asset portfolio by contributing just 
-						a single asset</span></span></span>
+					<p class="text-sm font-droid text-primary leading-[19px]">
+						TWMM <GradientText>enables liquidity pools</GradientText
+						> that are significantly more capital-efficient and secure
+						than traditional AMMs.<br /> By <GradientText
+							>utilizing oracles</GradientText
+						> and a <GradientText>novel fee </GradientText>
+						<GradientText>mechanism</GradientText>
+						it ensures the <GradientText>best </GradientText>
+						<GradientText>execution for large trades</GradientText> and
+						gives liquidity providers <GradientText
+							>maximum capital</GradientText
+						><GradientText> control</GradientText>
+					</p>
 				</div>
 
 				<div class="flex flex-col gap-4 max-w-[344px] w-full mx-auto">
-					<div class="w-full h-[84px] bg-[url(/mobile/manager.svg)] bg-no-repeat bg-contain" />
-					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Arcanum decoupled liquidity 
-						management into three key 
-						components: <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">liquidity provision, 
-						strategy management,</span></span> and <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">strategy 
-						execution</span></span></span>
-
-					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">This approach allows users to allocate funds 
-						to a variety of strategies designed by professionals. 
-						Strategy managers can focus on selecting asset 
-						allocations, while traders help rebalance pools 
-						and earn incentives for their contributions</span>
+					<p
+						class="w-full text-primary text-[37px] font-namu uppercase font-semibold leading-[100%] whitespace-nowrap"
+					>
+						Target Weight<br /> Market Maker
+					</p>
+					<p class="text-sm font-droid text-primary leading-[19px]">
+						The Target-Weight Market Maker (TWMM) <GradientText
+							>manages multi-asset liquidity
+						</GradientText>
+						<GradientText>in a vault structure</GradientText>. A
+						manager sets a "Target Weight" for each asset to define
+						the pool's ideal balance
+					</p>
+					<p class="text-sm font-droid text-primary leading-[19px]">
+						A <GradientText>dynamic fee system</GradientText> then penalizes
+						trades that increase imbalance and rewards trades that correct
+						it. This mechanism <GradientText
+							>mitigates Loss-Versus-</GradientText
+						><GradientText>Rebalancing</GradientText>
+						(LVR) and <GradientText>reframes</GradientText><br
+						/><GradientText>Impermanent Loss</GradientText> into a manageable<br
+						/>
+						part of a portfolio strategy
+					</p>
 				</div>
 
 				<div class="flex flex-col gap-4 max-w-[344px] w-full mx-auto">
-					<div class="w-full h-[101px] bg-[url(/mobile/aaa.svg)] bg-no-repeat bg-contain" />
-
-					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Arcanum's permissionless portfolios 
-						are secured by the <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">$AAA token, 
-						which has a floor price backed 
-						by the ecosystem's native token</span></span></span>
-
-					<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]"><span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">$AAA is used in the Proof-of-Stake 
-						(PoS)</span></span> mechanism of Arcanum's oracle 
-						network, which provides portfolio 
-						share prices. The token has 
-						a limited supply and increases its 
-						floor price each time the protocol 
-						generates revenue from portfolio 
-						management</span>
-				</div>
-
-				<div class="flex flex-col gap-8 max-w-[344px] w-full mx-auto">
-					<div class="w-full h-[101px] bg-[url(/mobile/use.svg)] bg-no-repeat bg-contain" />
-				
-					<div class="flex flex-col gap-0">
-						<span class="align-baseline pt-4 whitespace-pre-line font-namu font-[400] text-2xl leading-[31.2px] text-primary uppercase"><span class="inline-block text-tertiary text-lg leading-3 align-top mr-2">1</span>Create your own 
-							tokenized portfolio</span>
-						<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Create a tokenised strategy 
-							and receive fees. <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">The more popular 
-							the strategy is - the more fees you 
-							can get</span></span></span>
-
-						<span class="align-baseline pt-6 whitespace-pre-line font-namu font-[400] text-2xl leading-[31.2px] text-primary uppercase"><span class="inline-block text-tertiary text-lg leading-3 align-top mr-2">2</span>arm $AAA token</span>
-						<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Provide liquidity to portfolios 
-							to <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">farm Arcanum revenue token</span></span></span>
-					
-						<span class="align-baseline pt-6 whitespace-pre-line font-namu font-[400] text-2xl leading-[31.2px] text-primary uppercase"><span class="inline-block text-tertiary text-lg leading-3 align-top mr-2">3</span>Stake $AAA token</span>
-						<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]">Secure <span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">Arcanum’s oracle network</span></span> 
-							by delegating $AAA token 
-							to validators</span>
-
-						<span class="align-baseline pt-6 whitespace-pre-line font-namu font-[400] text-2xl leading-[31.2px] text-primary uppercase"><span class="inline-block text-tertiary text-lg leading-3 align-top mr-2">4</span>Use portfolios as 
-						liquidity source</span>
-						<span class="text-sm font-droid whitespace-pre-line text-primary leading-[19px]"><span class="bg-layer-floor-5"><span class="font-droid whitespace-pre-line bg-gradient-to-tl from-[#F37968] to-[#ED6486] bg-clip-text text-transparent">Become an on-chain trader</span></span> or use 
-							multipools in your existing trading 
-							strategies</span>
+					<div
+						class="w-full h-[101px] bg-[url(/mobile/aaa.svg)] bg-no-repeat bg-contain"
+					>
 					</div>
+
+					<p class="text-sm font-droid text-primary leading-[19px]">
+						Arcanum <GradientText
+							>redesigned tokenomics from</GradientText
+						>
+						<GradientText> the ground up</GradientText>. The
+						protocol revenue token, $AAA, captures 100% of protocol
+						revenue, which is used to build its intrinsic value and
+						create a permanent price floor
+					</p>
+
+					<p class="text-sm font-droid text-primary leading-[19px]">
+						This creates a <GradientText
+							>sustainable ecosystem</GradientText
+						>. Liquidity is of the treasury's assets. This directly
+						links the token's value to the protocol's performance,
+						ensuring our goals are always aligned with our token
+						holders
+					</p>
 				</div>
 			</div>
-
 		</div>
 		<Footer>
-			<slot name="footer"/>
+			<slot name="footer" />
 		</Footer>
 	</body>
 </html>

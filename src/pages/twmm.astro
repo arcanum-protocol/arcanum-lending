@@ -1,0 +1,36 @@
+---
+import GradientText from "../components/GradientText.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout page="twmm">
+	<p
+		class="tracking-[0.01em] text-sm font-droid text-white leading-[18.2px] xl:pt-12"
+	>
+		The Target-Weight Market Maker (TWMM) <GradientText
+			>manages</GradientText
+		><br />
+		<GradientText>multi-asset liquidity in a vault structure</GradientText>.
+		A manager<br />
+		sets a "Target Weight" for each asset to define the<br />
+		pool's ideal balance
+	</p>
+
+	<p class="tracking-[0.01em] text-sm font-droid text-white leading-[18.2px]">
+		A <GradientText>dynamic fee system</GradientText> then penalizes trades that<br
+		/>
+		increase imbalance and rewards trades that correct<br />
+		it. This mechanism <GradientText
+			>mitigates Loss-Versus-Rebalancing</GradientText
+		><br />
+		(LVR) and <GradientText>reframes Impermanent Loss</GradientText> into a manageable<br
+		/>
+		part of a portfolio strategy
+	</p>
+
+	<span
+		slot="footer"
+		class="hidden second:flex text-[50px] size-full main:text-[70px] text-primary font-namu font-semibold pt-4 uppercase flex-col leading-[100%]"
+		>Target Weight <span>Market Maker </span></span
+	>
+</Layout>
